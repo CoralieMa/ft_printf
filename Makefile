@@ -6,7 +6,7 @@
 #    By: cmartino <cmartino@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/19 13:51:06 by cmartino          #+#    #+#              #
-#    Updated: 2022/10/26 16:09:50 by cmartino         ###   ########.fr        #
+#    Updated: 2022/10/26 16:41:30 by cmartino         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,7 @@ ${NAME}:	${DEP} ${OBJS}
 		ar rcs ${NAME} ${OBJS}
 
 ${DEP}:		
-		make -C ${LIB_PATH}
+		@make -C ${LIB_PATH}
 		mv libft/${DEP} ${NAME}
 
 clean:
