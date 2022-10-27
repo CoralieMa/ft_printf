@@ -6,7 +6,7 @@
 /*   By: cmartino <cmartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 13:49:38 by cmartino          #+#    #+#             */
-/*   Updated: 2022/10/26 16:11:14 by cmartino         ###   ########.fr       */
+/*   Updated: 2022/10/27 08:35:04 by cmartino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ int	ft_type(va_list ap, char c)
 	else if (c == 'u')
 		return (ft_put_un_nbr_fd(va_arg(ap, unsigned int), 1, 0));
 	else if (c == 'x')
-		return (ft_convert_base_hexa(va_arg(ap, unsigned int), "0123456789abcdef"));
+		return (ft_base_hexa(va_arg(ap, unsigned int), "0123456789abcdef"));
 	else if (c == 'X')
-		return (ft_convert_base_hexa(va_arg(ap, unsigned int), "0123456789ABCDEF"));
+		return (ft_base_hexa(va_arg(ap, unsigned int), "0123456789ABCDEF"));
 	else if (c == '%')
 		return (ft_putchar_fd('%', 1));
 	return (-1);

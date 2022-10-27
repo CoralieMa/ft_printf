@@ -6,7 +6,7 @@
 #    By: cmartino <cmartino@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/19 13:51:06 by cmartino          #+#    #+#              #
-#    Updated: 2022/10/26 16:41:30 by cmartino         ###   ########.fr        #
+#    Updated: 2022/10/27 08:40:39 by cmartino         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,11 +52,4 @@ fclean:	clean
 
 re:	fclean all
 
-test: ${NAME}
-	@${CC} ${CFLAGS} main.c libftprintf.a
-	@echo "\n---------------------------------\n"
-	@./a.out
-	@echo "\n---------------------------------\n"
-	@${RM} a.out 
-
-.PHONY:	all clean fclean re test
+.PHONY:	all clean fclean re

@@ -6,7 +6,7 @@
 /*   By: cmartino <cmartino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 14:05:35 by cmartino          #+#    #+#             */
-/*   Updated: 2022/10/26 14:06:00 by cmartino         ###   ########.fr       */
+/*   Updated: 2022/10/27 08:35:21 by cmartino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static char	*ft_fill_tab(char *tab, char *base, unsigned int nb, int len)
 	return (tab);
 }
 
-int	ft_convert_base_hexa(unsigned int nb, char *base)
+int	ft_base_hexa(unsigned int nb, char *base)
 {
 	char	*tab;
 	int		len;
